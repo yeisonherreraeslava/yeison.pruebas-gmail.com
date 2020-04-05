@@ -14,7 +14,11 @@
 <body>
 <div class = "container" >
     <div class="row cabecera">
-       <input type="number" id="resultado" readonly>
+        <input type="text" id="resultado-historico" readonly>
+     </div>
+       
+    <div class="row cabecera">
+       <input type="text" id="resultado" readonly>
     </div>
 
     <div class="row">
@@ -28,7 +32,7 @@
             <button id="nueve" onclick="adicionarNumero(9)"> 9 </button>
         </div>
         <div class="col-1">
-            <button id="division" onclick="guardarOperacion('divide')"> / </button>
+            <button id="division" onclick="guardarOperacion('/')"> / </button>
         </div>
     </div>
     
@@ -43,7 +47,7 @@
             <button id="seis" onclick="adicionarNumero(6)"> 6 </button>
         </div>
         <div class="col-1">
-            <button id="division" onclick="guardarOperacion('multiplica')"> * </button>
+            <button id="division" onclick="guardarOperacion('*')"> * </button>
         </div>
     </div>
     <div class="row">
@@ -57,7 +61,7 @@
             <button id="tres" onclick="adicionarNumero(3)"> 3 </button>
         </div>
         <div class="col-1">
-            <button id="mas" onclick="guardarOperacion('suma')">+</button>
+            <button id="mas" onclick="guardarOperacion('+')">+</button>
         </div>
     </div>
     <div class="row">
@@ -65,11 +69,11 @@
             <button id="cero" onclick="adicionarNumero(0)"> 0 </button>
         </div>
         <div class="col-2">
-            <button id="igual" onclick="realizarOperacion()"> = </button> 
+            <button id="igual" onclick="ProcesarOperacion()"> = </button> 
         </div>
         
         <div class="col-1">
-            <button id="menos" onclick="guardarOperacion('suma')"> - </button>
+            <button id="menos" onclick="guardarOperacion('-')"> - </button>
         </div>
     </div>
 </div>
